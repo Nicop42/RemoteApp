@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ComfyUI Image Generator</title>
+</head>
+<body>
+    <h1>ComfyUI Image Generator</h1>
+
+    <label for="positivePrompt">Positive Prompt:</label><br>
+    <textarea id="positivePrompt" rows="4" cols="50">A portrait of Michel de Certeau, his figure clear and intact...</textarea><br><br>
+
+    <label for="negativePrompt">Negative Prompt:</label><br>
+    <textarea id="negativePrompt" rows="2" cols="50">beard</textarea><br><br>
+
+    <label for="seed">Seed (numero casuale o specifico):</label><br>
+    <input type="number" id="seed" value="554932836532794"><br><br>
+
+    <button onclick="generateImage()">Generate Image</button>
+
+    <h2>Result:</h2>
+    <div id="result"></div>
+    <img id="generatedImage" style="max-width: 512px; display: block; margin-top: 20px;">
+
+    <script src="script.js"></script>
+</body>
+</html>
