@@ -1,0 +1,2 @@
+# RemoteApp
+Test for frontend
